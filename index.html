@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DIG Conference - Oct 5, 2021</title>
+    <link type="text/css" href="css/normalize.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/main-min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta
+      name="description"
+      content="8 workshops to boost your skills at developemnt, strategy and content, and design at DIG2021"
+    />
+  </head>
+  <body>
+    <div class="wrapper-header">
+      <header class="site-header">
+        <nav class="site-navigation">
+          <a class="site-navigation__logo" href>
+            <img
+              src="images/dig-logo.png"
+              srcset="images/dig-logo@2x.png 2x"
+              alt="Dig logo"
+            />
+          </a>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a href="#">About </a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#">Schedule</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#">Speakers</a>
+            </li>
+          </ul>
+          <a href="#" class="site-navigation__cta">Register</a>
+        </nav>
+      </header>
+      <div class="site-title">
+        <h1>Dig Conference</h1>
+        <p class="main-location">
+          <time datetime="2021-05-21">10.5.21</time> | Baton Rouge, LA
+        </p>
+      </div>
+    </div>
+    <main>
+      <section class="experiences">
+        <div class="experiences__wrapper">
+          <h2>Customize your Dig experience</h2>
+          <p>
+            Choose from the options below to filter workshops available this
+            year at <b>DIG2021</b>!
+          </p>
+          <form action="#" method="get">
+            <div class="experiences__checkboxes">
+              <div class="experience__wrapper">
+                <input
+                  type="checkbox"
+                  name="experience"
+                  value="development"
+                  id="development"
+                  data-filter="development"
+                  checked
+                />
+                <img src="images/development-icon.svg" />
+                <label for="development">Development</label>
+              </div>
+
+              <div class="experience__wrapper">
+                <input
+                  type="checkbox"
+                  name="experience"
+                  value="strategy"
+                  id="strategy"
+                  data-filter="strategy"
+                  checked
+                /><img src="images/strategy-icon.svg" />
+                <label for="strategy">Strategy and Content</label>
+              </div>
+
+              <div class="experience__wrapper">
+                <input
+                  type="checkbox"
+                  name="experience"
+                  value="design"
+                  id="design"
+                  data-filter="design"
+                  checked
+                /><img src="images/design-icon.svg" />
+                <label for="design">Design</label>
+              </div>
+            </div>
+          </form>
+          <ul class="experiences__list">
+            <li class="experiences__item" data-development>
+              <a>
+                <h3>Workshop</h3>
+                <div class="experiences__icons">
+                  <img src="images/development-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li class="experiences__item" data-design data-development>
+              <a>
+                <h3>Workshop 2</h3>
+                <div class="experiences__icons">
+                  <img src="images/development-icon.svg" />
+                  <img src="images/design-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="experiences__item"
+              data-design
+              data-development
+              data-strategy
+            >
+              <a>
+                <h3>Workshop 3</h3>
+                <div class="experiences__icons">
+                  <img src="images/development-icon.svg" />
+                  <img src="images/strategy-icon.svg" />
+                  <img src="images/design-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li class="experiences__item" data-design>
+              <a>
+                <h3>Workshop 4</h3>
+                <div class="experiences__icons">
+                  <img src="images/design-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li class="experiences__item" data-strategy>
+              <a>
+                <h3>Workshop 5</h3>
+                <div class="experiences__icons">
+                  <img src="images/strategy-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="experiences__item"
+              data-design
+              data-development
+              data-strategy
+            >
+              <a>
+                <h3>Workshop 6</h3>
+                <div class="experiences__icons">
+                  <img src="images/development-icon.svg" />
+                  <img src="images/strategy-icon.svg" />
+                  <img src="images/design-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li class="experiences__item" data-design data-development>
+              <a>
+                <h3>Workshop 7</h3>
+                <div class="experiences__icons">
+                  <img src="images/development-icon.svg" />
+                  <img src="images/design-icon.svg" />
+                </div>
+              </a>
+            </li>
+
+            <li class="experiences__item" data-strategy data-development>
+              <a>
+                <h3>Workshop 8</h3>
+                <div class="experiences__icons">
+                  <img src="images/development-icon.svg" />
+                  <img src="images/strategy-icon.svg" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="events-and-news">
+        <div class="events-and-news__wrapper">
+          <div class="events">
+            <h2 class="events__title">Events</h2>
+            <ul class="events__list">
+              <li class="events__item">
+                <p class="events__date">
+                  <time datetime="2021-10-04">Oct<br /><span>4</span></time>
+                </p>
+                <div class="events__details">
+                  <h3 class="events__name">Registration and Sign-in</h3>
+                  <p class="events__time">
+                    <time datetime="PT1H">3:30 p.m. - 4:30 p.m.</time>
+                  </p>
+                </div>
+              </li>
+
+              <li class="events__item">
+                <p class="events__date">
+                  <time datetime="2021-10-04">Oct<br /><span>4</span></time>
+                </p>
+                <div class="events__details">
+                  <h3 class="events__name">
+                    Happy hour
+                  </h3>
+                  <p class="events__time">
+                    <time datetime="PT2H30MH">5:00 p.m. - 7:30 p.m.</time>
+                  </p>
+                </div>
+              </li>
+
+              <li class="events__item">
+                <p class="events__date">
+                  <time datetime="2021-10-05">Oct<br /><span>5</span></time>
+                </p>
+                <div class="events__details">
+                  <h3 class="events__name">Morning coffee and social</h3>
+                  <p class="events__time">
+                    <time datetime="PT1H">8:00 a.m. - 9 a.m.</time>
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <a class="events__view-all" href="#">View all</a>
+          </div>
+          <div class="news">
+            <h2 class="news__title">News</h2>
+            <ul class="news__list">
+              <li class="news__item">
+                <article class="news__article">
+                  <h3>
+                    <a href="#" class="news__link">
+                      Influential speakers at DIG this year</a
+                    >
+                  </h3>
+                  <p class="news__date">
+                    <time datetime="2021-09-30">September 30, 2021</time>
+                  </p>
+                </article>
+              </li>
+
+              <li class="news__item">
+                <article class="news__article">
+                  <h3>
+                    <a href="#" class="news__link"
+                      >Tech meet-ups in Baton Rouge</a
+                    >
+                  </h3>
+                  <p class="news__date">
+                    <time datetime="2021-08-02">August 2, 2021</time>
+                  </p>
+                </article>
+              </li>
+
+              <li class="news__item">
+                <article class="news__article">
+                  <h3>
+                    <a href="#" class="news__link"
+                      >How to get the most out of tech conferences</a
+                    >
+                  </h3>
+                  <p class="news__date">
+                    <time datetime="2021-07-03">July 3, 2021</time>
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <a class="news__view-all" href="#">View all</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="site-footer">
+        <a class="site-footer__logo" href>
+          <img
+            src="images/dig-logo-footer.png"
+            srcset="images/dig-logo-footer@2x.png 2x"
+            alt="Dig logo"
+          />
+        </a>
+        <div class="site-footer__text">
+          <p>
+            Connect and share
+          </p>
+          <ul class="site-footer__icon-list">
+            <li class="site-footer__list-item">
+              <a href="#"
+                ><span class="visually-hidden">Find us on Fabebook</span
+                ><img src="images/facebook-icon.svg"
+              /></a>
+            </li>
+            <li class="site-footer__list-item">
+              <a href="#"
+                ><span class="visually-hidden">Find us on Twitter</span
+                ><img src="images/twitter-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="filter.js"></script>
+</html>
