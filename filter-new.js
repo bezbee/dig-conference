@@ -51,9 +51,7 @@ const workshops = [
     design: false
   }
 ];
-const allWorkshops = workshops
-  .map(workshop => createWorkshopTempate(workshop))
-  .join(``);
+
 const section = document.querySelector(`.experiences`);
 
 const createWorkshopTempate = item => {
@@ -76,7 +74,9 @@ const createWorkshopTempate = item => {
                   </a>
                 </li>`;
 };
-
+const allWorkshops = workshops
+  .map(workshop => createWorkshopTempate(workshop))
+  .join(``);
 const replaceListElement = (oldElement, list) => {
   const newListItem = document.createElement(`ul`);
   newListItem.classList.add(`experiences__list`);
